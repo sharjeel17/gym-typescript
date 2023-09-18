@@ -22,8 +22,7 @@ const Home = ({ setSelectedPage }: Props) => {
             className="md:flex mx-auto w-5/6 items-center justify-center h-5/6"
             onViewportEnter={() => setSelectedPage(SelectedPage.Home)}>
             {/* MAIN HEADER */}
-            <div 
-                className="mt-32 z-10 md:basis-3/5">
+            <div className="mt-32 z-10 md:basis-3/5">
                 {/* HEADINGS */}
                 <motion.div 
                     initial="hidden"
@@ -46,6 +45,7 @@ const Home = ({ setSelectedPage }: Props) => {
                     Body Now.
                     </p>
                 </motion.div>
+                
                 {/* ACTIONS */}
                 <motion.div 
                     variants={{

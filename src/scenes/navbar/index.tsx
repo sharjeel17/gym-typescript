@@ -42,7 +42,9 @@ const Navbar = ({selectedPage, setSelectedPage, isTopOfPage}: Props) => {
 
             {/* RIGHT SIDE */}
             {/* Change navbar according to screen size */}
-            { isAboveMediumScreens ? (<div className={`${flexbetween} w-full gap-8`}>
+            { isAboveMediumScreens ? 
+            (
+            <div className={`${flexbetween} w-full gap-8`}>
 
               {/* INNER LEFT SIDE */}
               <div className={`${flexbetween} gap-8 text-md`}>
@@ -63,7 +65,8 @@ const Navbar = ({selectedPage, setSelectedPage, isTopOfPage}: Props) => {
                 </ActionButton>
                 
               </div>
-            </div> )
+            </div> 
+            )
             // If screen size is below medium screens
             : (
               <button className="rounded-full bg-secondary-500 p-2" onClick={() => setIsMenuToggled(!isMenuToggled)}>
@@ -79,7 +82,7 @@ const Navbar = ({selectedPage, setSelectedPage, isTopOfPage}: Props) => {
       {(!isAboveMediumScreens) && (isMenuToggled) && (
         <div className="fixed right-0 bottom-0 h-full w-[300px] z-40 bg-primary-100 drop-shadow-xl">
           {/* CLOSE ICON */}
-          <div className="flex justify-end p-12">
+          <div className="flex justify-start p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
               <XMarkIcon className="h-6 w-6 text=gray-400"/>
             </button>

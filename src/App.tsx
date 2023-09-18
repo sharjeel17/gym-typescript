@@ -20,15 +20,16 @@ function App() {
         setIsTopOfPage(false);
       }
     };
+
     window.addEventListener("scroll", handleScroll);
     return () => window.removeEventListener("scroll", handleScroll);
+    
   }, [])
   
   return (
     <div className="app bg-gray-20">
       <Navbar 
-      isTopOfPage={isTopOfPage}
-      selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+      isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
     </div>
