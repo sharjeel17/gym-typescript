@@ -49,8 +49,8 @@ const Navbar = ({selectedPage, setSelectedPage, isTopOfPage}: Props) => {
               {/* INNER LEFT SIDE */}
               <div className={`${flexbetween} gap-8 text-md`}>
                 <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                <Link page="Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                 <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                <Link page="Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                 <Link page="About Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                 
               </div>

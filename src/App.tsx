@@ -3,6 +3,7 @@ import Home from "@/scenes/home/index.tsx";
 import Benefits from "@/scenes/benefits/index.tsx";
 import { useEffect, useState } from "react"
 import { SelectedPage } from "@/shared/types";
+import OurClasses from "./scenes/ourClasses";
 
 function App() {
   console.log("re-render here");
@@ -32,6 +33,7 @@ function App() {
       isTopOfPage={isTopOfPage} selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
       <Home setSelectedPage={setSelectedPage} />
       <Benefits setSelectedPage={setSelectedPage} />
+      <OurClasses setSelectedPage={setSelectedPage} />
     </div>
   )
 }
