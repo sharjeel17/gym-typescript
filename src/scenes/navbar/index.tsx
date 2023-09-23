@@ -90,8 +90,8 @@ const Navbar = ({selectedPage, setSelectedPage, isTopOfPage}: Props) => {
           {/* MENU ITEMS */}
           <div className="flex flex-col items-center gap-10 text-lg">
             <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-            <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
             <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+            <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
             <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
           </div>
         </div>
