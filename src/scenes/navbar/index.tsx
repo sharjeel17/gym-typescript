@@ -50,8 +50,8 @@ const Navbar = ({selectedPage, setSelectedPage, isTopOfPage}: Props) => {
               <div className={`${flexbetween} gap-8 text-md`}>
                 <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                 <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                <Link page="Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-                <Link page="About Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+                <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
                 
               </div>
 
@@ -90,9 +90,9 @@ const Navbar = ({selectedPage, setSelectedPage, isTopOfPage}: Props) => {
           {/* MENU ITEMS */}
           <div className="flex flex-col items-center gap-10 text-lg">
             <Link page="Home" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-            <Link page="Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+            <Link page="Our Classes" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
             <Link page="Benefits" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
-            <Link page="About Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
+            <Link page="Contact Us" selectedPage={selectedPage} setSelectedPage={setSelectedPage}/>
           </div>
         </div>
       ) }
